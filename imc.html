@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="Imagem/icon" href="assets/img/icon.png">
+  <title>Saúde em Movimento</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/sweetalert2@11.js"></script>
+  <link rel="stylesheet" href="assets/css/menu.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/scroll.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/calculadora.css">
+  <script src="assets/js/scroll.js"></script>
+  <script src="assets/js/menu.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+<!--MENU-->
+<header>
+    <nav class="nav-bar">
+      <div class="logo">
+          <h3>Saúde em Movimento</h3>
+      </div>
+  
+           <div class="nav-list">
+              <ul>
+            <li class="nav-item"><a href="index.html" class="nav-link">Musculação, Alimentação e Saúde</a></li>
+            <li class="nav-item"><a href="bonus.html" class="nav-link">Bônus</a></li>
+          </ul>
+           </div>
+  
+          <div class="imc-button">
+          <button><a href="#">IMC</a></button></div>
+          
+  
+       <div class="mobile-menu-icon">
+          <button onclick="menuShow()"><img class="icon" src="assets/img/menu.png" alt="icon sanduiche"></button>
+      </div>
+    </nav>
+  
+  <div class="mobile-menu">
+  
+      <ul>
+          <li class="nav-item"><a href="#musc" class="nav-link">Musculação, Alimentação e Saúde</a></li>
+          <li class="nav-item"><a href="bonus.html" class="nav-link">Bônus</a></li>
+        </ul>
+  
+        <div class="imc-button">
+            <button><a href="imc.html">IMC</a></button></div>
+          
+  </div>  
+  </header>
+  <!--final do MENU-->
+
+  <h1>IMC: você sabe o que o Índice de Massa Corporal diz sobre sua saúde?</h1>
+          <h2>O calculo pode ser feito em casa, mas, dependendo do resultado, é importante procurar um médico para avaliar o grau de subpeso ou obesidade</h2>
+          <br>
+          <p>Índice de Massa Corporal. Você já deve ter ouvido falar nisso. Talvez apenas a sigla IMC. Mas você sabe que índice é este e o que ele pode dizer sobre a sua saúde?
+
+            Criado no século 19 pelo matemático Lambert Quételet, o Índice de Massa Corporal, conhecido pela sigla IMC, é um cálculo simples que permite medir se alguém está ou não com o peso ideal. Ele aponta se o peso está adequado ou se está abaixo ou acima do peso.
+            
+            Para fazer o cálculo, basta dividir o peso pela altura ao quadrado. O número final representa o quanto a pessoa tem de massa muscular + massa de gordura + massa óssea. Com o resultado, o próximo passo é interpretá-lo.</p>
+            <br>
+            <p class="findar"> Quando o índice de massa corporal recomendado está excedido, é porque a pessoa pode estar numa situação de sobrepeso com tendência à obesidade ou já ter a obesidade. Portanto, o calculo pode ser feito em casa, mas, dependendo do resultado, é importante procurar um médico para avaliar o grau de sobrepeso ou obesidade. Ou o extremo oposto disso. Se o índice estiver muito abaixo da normalidade para o homem e para a mulher indica que a pessoa pode estar no estado de desnutrição, de perda expressiva de massa. E assim como a obesidade, também existem graus de magreza.
+
+              Fonte: Ministério da saúde.
+            </p>
+            
+            <main>
+                <div class="cont">
+                    <div class="title">IMC</div>
+                    <div class="input">
+                        <label>Nome:</label>
+                        <input type="text" placeholder= "Digite seu nome" id="nome">    
+                    </div>
+    
+                    <div class="input">
+                        <label>Altura:</label>
+                        <input type="number" placeholder= "ex.: 1,74" id="altura">
+                    </div>
+    
+                    <div class="input">
+                        <label>Peso:</label>
+                        <input type="number" placeholder= "kg"id="peso">
+                    </div>
+                    <button id="calcular">calcular</button>
+    
+                    <div class="result" id="resultado"></div>
+               </div>
+            </main>
+
+<!--FOOTER-->
+
+<footer>
+    <div id="footer_content">
+      <div id="footer_contacts">
+        <img src="assets/img/icon2.png" alt="logo">
+        <p>Saúde em Movimento</p>
+  
+        <div id="footer_social_media">
+          <a href="#" class="footer_link" id="instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+  
+          <a href="#" class="footer_link" id="facebook">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+  
+          <a href="#" class="footer_link" id="whatsapp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          
+        </div>
+      </div>
+  
+      <ul class="footer_list">
+  
+        <li>
+          <a href="#" class="footer_link">Musculação e Saúde</a>
+        </li>
+        <li>
+          <a href="#" class="footer_link">Idade e Musculação</a>
+        </li>
+        <li>
+          <a href="#" class="footer_link">Queima de Gordura</a>
+        </li>
+        <li>
+          <a href="#" class="footer_link">Bem-Estar</a>
+        </li>
+        <li>
+          <a href="#" class="footer_link">Estilo de Vida Saudável</a>
+        </li>
+      </ul>
+  
+      <ul class="footer_list">
+  
+        <li>
+          <a href="#" class="footer_link">Ganho Muscular</a>
+        </li>
+        <li>
+          <a href="#" class="footer_link">Suplementação</a>
+        </li>
+        <li>
+          <a href="#" class="footer_link">Flexibilidade</a>
+        </li>
+        <li>
+          <a href="#" class="footer_link">Resiliência Física</a>
+        </li>
+        <li>
+          <a href="#" class="footer_link">Saúde Mental e Treino</a>
+        </li>
+      </ul>
+  
+    <div id="footer_subscribe">
+  
+      <p>Digite o seu e-mail abaixo para receber nosso E-book e novidades sobre o universo da saúde, alimentação e musculação.</p>
+  
+      <div id="input_group">
+        <input type="email" id="email">    
+        <button>
+          <i class="fa-solid fa-envelope-circle-check"></i>
+        </button>
+      </div>
+    </div>
+    </div>
+  
+    <div id="footer_copyright">
+      &#169 
+      2023 Todos direitos reservados.
+    </div>
+  </footer>
+
+<!--TÉRMINO DO FOOTER-->            
+    
+</div>
+<script src="assets/js/calculadora.js"></script>
+</body>
+</html>
